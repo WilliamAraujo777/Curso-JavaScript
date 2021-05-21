@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background-color: rgba(8, 4, 66, 0.856);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Iniciando Estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique aqui</div>
+    
+    <script>
+       
+       var p1 = window.document.getElementsByTagName('p')[1]
+       
+       //window.document.write('Está escrito assim: ' + p1.innerText);
+       //p1.style.color = 'Purple'
+       //document.write(p1.innerHTML)
+       //window.alert(p1.innerText)
+       
+       /*Selecionando por ID
+       var d = window.document.getElementById('msg')
+       d.style.background = 'green';
+       d.innerText = 'Estou aguardando...'
+        */
+
+        /*Selecionando por nome
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'*/
+
+        /*Selecionando por selector
+        var d = window.document.querySelector('div#msg');
+        d.innerText = 'Olá'*/
+
+        
+
+    </script>
+</body>
+</html>
